@@ -2,7 +2,6 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import matplotlib.pyplot as plt
-
 # Load the saved model
 model = tf.keras.models.load_model('./model/model.h5')
 
@@ -28,6 +27,7 @@ for i,j in enumerate(predictions[0]):
     print(labels[i], "\t:  ", j)
 
 plt.imshow(image.load_img(img_path))
-plt.title(f'Predictions: {labels[predicted_index]}')
+plt.title(f'Predictions: {predictions}')
 plt.axis('off')
 plt.show()
+
