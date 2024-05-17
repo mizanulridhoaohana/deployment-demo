@@ -28,7 +28,6 @@ defusedxml==0.7.1
 Django==4.2.11
 entrypoints==0.3
 filelock==3.12.2
-flake8==3.9.2
 flatbuffers==24.3.25
 fonttools==4.42.0
 gast==0.5.4
